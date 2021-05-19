@@ -1,17 +1,119 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gmail clone</title>
-</head>
-<body>
-    <form id="formsubmit">
-    <label for="emailId">Enter your email</label>
-    <input type="text" name="email" id="emailId">
-    <input type="submit" value="submit" id="emailsubmit">
-    </form>
-    <script src="scripy.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="gmailstyle.css" />
+    <title>Final - Gmail Clone</title>
+  </head>
+  <body>
+    <!-- Header Starts -->
+    <div class="header">
+      <div class="header__left">
+        <span class="material-icons"> menu </span>
+        <img
+          src="https://i.pinimg.com/originals/ae/47/fa/ae47fa9a8fd263aa364018517020552d.png"
+          alt=""
+        />
+      </div>
+
+      <div class="header__middle">
+        <span class="material-icons"> search </span>
+        <input type="text" placeholder="Search mail" />
+        <span class="material-icons"> arrow_drop_down </span>
+      </div>
+
+      <div class="header__right">
+        <span class="material-icons"> apps </span>
+        <span class="material-icons"> notifications </span>
+        <span class="material-icons"> account_circle </span>
+      </div>
+    </div>
+    <!-- Header Ends -->
+
+    <!-- Main Body Starts -->
+    <div class="main__body">
+      <!-- Sidebar Starts -->
+      <div class="sidebar">
+        <button class="sidebar__compose"><span class="material-icons"> add </span>Compose</button>
+        <table>
+          <tr>
+            <td><button>
+              <i class="fa fa-inbox fa-3x" aria-hidden="true"> Inbox</i>
+            </button></td>
+          </tr>
+          <tr>
+            <td>
+              <button>
+                <i class="fa fa-paper-plane-o fa-3x" aria-hidden="true"> Sent</i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button>
+                <i class="fa fa-file-o fa-3x" aria-hidden="true"> Drafts</i>
+              </button>
+            </td>
+          </tr>
+        </table>
+        
+        <div class="sidebar__footer">
+          <div class="sidebar__footerIcons">
+            <span class="material-icons"> person </span>
+            <span class="material-icons"> duo </span>
+            <span class="material-icons"> phone </span>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar Ends -->
+
+      <!-- Email List Starts -->
+      <div class="emailList">
+        <!-- Settings Starts -->
+        <div class="emailList__settings">
+          <div class="emailList__settingsLeft">
+            <input type="checkbox" />
+            <span class="material-icons"> arrow_drop_down </span>
+            <span class="material-icons"> redo </span>
+            <span class="material-icons"> more_vert </span>
+          </div>
+          <div class="emailList__settingsRight">
+            <span class="material-icons"> chevron_left </span>
+            <span class="material-icons"> chevron_right </span>
+            <span class="material-icons"> keyboard_hide </span>
+            <span class="material-icons"> settings </span>
+          </div>
+        </div>
+        <!-- Settings Ends -->
+
+        <!-- Section Starts -->
+        <div class="emailList__sections">
+          <div class="section section__selected">
+            <span class="material-icons"> inbox </span>
+            <h4>Primary</h4>
+          </div>
+
+          <div class="section">
+            <span class="material-icons"> people </span>
+            <h4>Social</h4>
+          </div>
+
+          <div class="section">
+            <span class="material-icons"> local_offer </span>
+            <h4>Promotions</h4>
+          </div>
+        </div>
+        <!-- Section Ends -->
+        <!--Row should be pasted here-->
+        
+      </div>
+      <!-- Email List Ends -->
+    </div>
+    <!-- Main Body Ends -->
+    
+  </body>
 </html>
