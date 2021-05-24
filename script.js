@@ -12,10 +12,10 @@ function oauthSignIn() {
   form.setAttribute('action', oauth2Endpoint);
 
   // Parameters to pass to OAuth 2.0 endpoint.
-  var params = {'client_id': 'YOUR_CLIENT_ID',
-                'redirect_uri': 'YOUR_REDIRECT_URI',
+  var params = {'client_id': '11400630400-42ifqhgvpmdter81hrkem9or2hfljlcl.apps.googleusercontent.com',
+                'redirect_uri': 'https://happy-volhard-44db63.netlify.app/',
                 'response_type': 'token',
-                'scope': 'https://www.googleapis.com/auth/drive.metadata.readonly',
+                'scope': 'https://mail.google.com/',
                 'include_granted_scopes': 'true',
                 'state': 'pass-through value'};
 
